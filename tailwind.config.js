@@ -2,7 +2,16 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      margin: {
+        '20px': '20px',
+        '40px': '40px',
+        '60px': '60px',
+        '70px': '70px',
+        '80px': '80px',
+        '100px': '100px',
+      }
+    },
     colors: {
       primary: "#219AD3",
       secondary: "#081A4B",
