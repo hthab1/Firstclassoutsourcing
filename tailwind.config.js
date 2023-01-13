@@ -10,6 +10,8 @@ module.exports = {
         '70px': '70px',
         '80px': '80px',
         '100px': '100px',
+        '110px': '110px',
+        '120px': '120px',
       }
     },
     colors: {

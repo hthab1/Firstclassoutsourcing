@@ -9,3 +9,7 @@
 .h-120vh{
     height: 120vh;
 }
+
+.h-fit{
+    height: fit-content;
+}
