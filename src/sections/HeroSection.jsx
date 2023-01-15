@@ -20,9 +20,9 @@ function HeroSection() {
       </div>
       <div className="flex flex-col items-start justify-center w-full">
         <h1 className="text-white font-black fontRaleway text-6xl lineh15 max-w-xl">
-          First Class Outsourcing for your bussiness
+          Quality Remote Talent for your bussiness
         </h1>
-        <p className="text-white font-light fontOpenSans text-xl lineh25 mt-10 max-w-xl">
+        <p className="text-white font-light fontOpenSans text-lg lineh25 mt-10 max-w-xl">
           We deliver excellent customer experience. And you will find a perfect
           match in terms of both skills and cultural fit.
         </p>

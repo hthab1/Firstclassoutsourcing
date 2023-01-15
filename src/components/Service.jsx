@@ -18,10 +18,10 @@ function Service({ icon, iconActive, name, description, sm }) {
             alt="icon"
           />
         </div>
-        <span className="text-2xl text-secondary font-bold fontOpenSans group-hover:text-white transition-all mb-2">
+        <span className="text-xl text-secondary font-semibold fontOpenSans group-hover:text-white transition-all mb-4 mt-2">
           {name}
         </span>
-        <p className="text-base text-secondary font-normal fontOpenSans group-hover:text-white transition-all">
+        <p className="text-sm text-secondary font-normal fontOpenSans group-hover:text-white transition-all">
           {description}
         </p>
       </div>

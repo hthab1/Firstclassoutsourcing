@@ -23,11 +23,11 @@ function TrustedSection() {
         <img src={Company} className="w-8 h-8 opacity-50" alt="" />
         <img src={Company} className="w-8 h-8 opacity-50" alt="" />
       </div>
-      <p className="text-secondary fontRaleway text-5xl font-medium px-4 text-center max-w-screen-lg mb-10">
+      <p className="text-secondary fontRaleway text-4xl font-medium px-4 text-center max-w-2xl mb-10">
         We recruit experts and train them to understand your products, services,
         and company policies.
       </p>
-      <div className="text-primary cursor-pointer font-light text-xl flex items-center gap-4 hover:animate-pulse">
+      <div className="text-primary cursor-pointer font-light text-lg flex items-center gap-4 hover:animate-pulse">
         <span className="fontInter">Learn More</span>
         <HiOutlineArrowNarrowRight />
       </div>

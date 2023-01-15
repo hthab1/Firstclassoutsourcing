@@ -1,4 +1,6 @@
 import React from "react";
+//sections
+import EasyStepsSections from "../sections/EasyStepsSections";
 import HeroSection from "../sections/HeroSection";
 import ServicesSection from "../sections/ServicesSection";
 import TrustedSection from "../sections/TrustedSection";
@@ -9,6 +11,7 @@ function HomePage() {
         <HeroSection />
         <TrustedSection />
         <ServicesSection />
+        <EasyStepsSections />
     </div>
   );
 }
