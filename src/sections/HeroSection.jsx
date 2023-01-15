@@ -1,7 +1,9 @@
 import React from "react";
+//custom components
 import CustomSection from "../components/CustomSection";
-import HeroImage from "../components/HeroImage";
 import MainButton from "../components/MainButton";
+//assets
+import HeroImage from "../components/HeroImage";
 
 function HeroSection() {
   return (
