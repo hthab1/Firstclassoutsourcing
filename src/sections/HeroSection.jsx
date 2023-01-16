@@ -26,7 +26,7 @@ function HeroSection() {
           We deliver excellent customer experience. And you will find a perfect
           match in terms of both skills and cultural fit.
         </p>
-        <MainButton className="mt-[70px]" name="Talk to us" />
+        <MainButton className="mt-[70px]" name="Talk to us"/>
       </div>
     </CustomSection>
   );

@@ -25,12 +25,12 @@ function StepPc({ title, description, number, id, target, small }) {
           <div className="absolute h-full flex items-center text-xl left-0 arrowPadding text-primary">
             <BsChevronRight />
           </div>
-          <div className="h-16 w-16 rounded-full flex items-center justify-center text-3xl font-semibold text-secondary border-2 border-secondary">
+          <div className="h-16 w-16 rounded-full flex items-center justify-center text-3xl font-semibold text-primary border-2 border-primary">
             {number}
           </div>
         </div>
       </ArcherElement>
-      <span className="text-secondary text-xl text-secodary font-semibold fontOpenSans mt-4">
+      <span className="text-secondary text-xl font-semibold fontOpenSans mt-4">
         {title}
       </span>
       <span className="text-secondary text-lg text-darkGray font-normal fontOpenSans text-center mt-4">
