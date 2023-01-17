@@ -1,6 +1,7 @@
 import React from "react";
 //sections
 import EasyStepsSections from "../sections/EasyStepsSections";
+import FAQ from "../sections/FAQ";
 import FeaturesSection from "../sections/FeaturesSection";
 import HeroSection from "../sections/HeroSection";
 import ServicesSection from "../sections/ServicesSection";
@@ -14,6 +15,7 @@ function HomePage() {
         <ServicesSection />
         <EasyStepsSections />
         <FeaturesSection />
+        <FAQ />
     </div>
   );
 }

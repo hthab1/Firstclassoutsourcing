@@ -19,7 +19,11 @@ module.exports = {
         '170px': '170px',
       },
       width:{
-        "500px":"500px"
+        "100px":"100px",
+        "200px":"200px",
+        "300px":"300px",
+        "400px":"400px",
+        "500px":"500px",
       },
       height:{
         "290px":"290px",
