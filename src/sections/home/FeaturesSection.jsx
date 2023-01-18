@@ -1,12 +1,12 @@
 import React from "react";
 //custom components
-import CustomSection from "../components/CustomSection";
-import Feature from "../components/Feature";
+import CustomSection from "../../components/CustomSection";
+import Feature from "../../components/Feature";
 
 function FeaturesSection() {
   return (
     <CustomSection classNameParent="h-fit" classNameChild="w-full py-1">
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center gap-4 mb-[100px]">
         <Feature
           image={
             "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGZsZXhpYmxlJTIwd29ya2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"

@@ -1,20 +1,20 @@
 import React from "react";
 //custom components
-import CustomSection from "../components/CustomSection";
-import Service from "../components/Service";
+import CustomSection from "../../components/CustomSection";
+import Service from "../../components/Service";
 //assets
-import Customer from "../assets/services/CustomerIcon.svg";
-import CustomerActive from "../assets/services/CustomerActiveIcon.svg";
-import Digital from "../assets/services/DigitalIcon.svg";
-import DigitalActive from "../assets/services/DigitalActiveIcon.svg";
-import Graphics from "../assets/services/GraphicsIcon.svg";
-import GraphicsActive from "../assets/services/GraphicsActiveIcon.svg";
-import Others from "../assets/services/OthersIcon.svg";
-import OthersActive from "../assets/services/OthersActiveIcon.svg";
-import Project from "../assets/services/ProjectIcon.svg";
-import ProjectActive from "../assets/services/ProjectActiveIcon.svg";
-import Website from "../assets/services/WebsiteIcon.svg";
-import WebsiteActive from "../assets/services/WebsiteActiveIcon.svg";
+import Customer from "../../assets/services/CustomerIcon.svg";
+import CustomerActive from "../../assets/services/CustomerActiveIcon.svg";
+import Digital from "../../assets/services/DigitalIcon.svg";
+import DigitalActive from "../../assets/services/DigitalActiveIcon.svg";
+import Graphics from "../../assets/services/GraphicsIcon.svg";
+import GraphicsActive from "../../assets/services/GraphicsActiveIcon.svg";
+import Others from "../../assets/services/OthersIcon.svg";
+import OthersActive from "../../assets/services/OthersActiveIcon.svg";
+import Project from "../../assets/services/ProjectIcon.svg";
+import ProjectActive from "../../assets/services/ProjectActiveIcon.svg";
+import Website from "../../assets/services/WebsiteIcon.svg";
+import WebsiteActive from "../../assets/services/WebsiteActiveIcon.svg";
 
 function ServicesSection() {
   return (
@@ -27,7 +27,7 @@ function ServicesSection() {
           We assemble a team of dedicated professionals that are uniquely
           equipped to meet your needs.
         </p>
-        <div className="w-full flex items-center gap-1 justify-center flex-wrap mt-8 mb-[40px]">
+        <div className="w-full grid-container-3 items-center gap-1 justify-center mt-8 mb-[40px]">
           <Service
             icon={Digital}
             iconActive={DigitalActive}

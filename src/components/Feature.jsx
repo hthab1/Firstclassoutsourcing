@@ -1,6 +1,9 @@
 import React from "react";
+//packages
+import { useNavigate } from "react-router-dom";
 
 function Feature({ button, title, image, description, reverse }) {
+  const navigate = useNavigate();
   return (
     <div
       className={`flex flex-row w-full items-center justify-between my-[60px] ${
@@ -13,7 +16,12 @@ function Feature({ button, title, image, description, reverse }) {
           {title}
         </h3>
         <p className="text-base fontOpenSans mb-4">{description}</p>
-        <button className="cursor-pointer uppercase p-2 border-primary border-2 px-8 mt-4 fontInter text-primary text-base font-semibold rounded-full hover:bg-primary hover:text-white transition-all ">
+        <button
+          className="cursor-pointer uppercase p-2 border-primary border-2 px-8 mt-4 fontInter text-primary text-base font-semibold rounded-full hover:bg-primary hover:text-white transition-all "
+          onClick={() => {
+            navigate("/contact");
+          }}
+        >
           {button}
         </button>
       </div>

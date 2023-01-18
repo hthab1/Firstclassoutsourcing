@@ -1,3 +1,16 @@
-.app{
-    overflow-x: hidden;
+.app {
+  overflow-x: hidden;
+}
+
+input:focus {
+  outline: none;
+}
+
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: auto auto;
 }

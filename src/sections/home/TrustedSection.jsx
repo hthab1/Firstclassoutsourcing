@@ -1,12 +1,14 @@
 import React from "react";
 //package
+import { useNavigate } from "react-router-dom";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 //custom component
-import CustomSection from "../components/CustomSection";
+import CustomSection from "../../components/CustomSection";
 //assets
-import Company from "../assets/trustedCompanies/CompanyIcon.svg";
+import Company from "../../assets/trustedCompanies/CompanyIcon.svg";
 
 function TrustedSection() {
+  const navigate = useNavigate();
   return (
     <CustomSection
       classNameParent="h-fit"
@@ -27,7 +29,12 @@ function TrustedSection() {
         We recruit experts and train them to understand your products, services,
         and company policies.
       </p>
-      <div className="text-primary cursor-pointer font-light text-lg flex items-center gap-4 hover:animate-pulse">
+      <div
+        className="text-primary cursor-pointer font-light text-lg flex items-center gap-4 hover:animate-pulse"
+        onClick={() => {
+          navigate("/about");
+        }}
+      >
         <span className="fontInter">Learn More</span>
         <HiOutlineArrowNarrowRight />
       </div>

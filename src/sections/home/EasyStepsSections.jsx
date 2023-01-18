@@ -1,8 +1,8 @@
 import React from "react";
+import CustomSection from "../../components/CustomSection";
+import StepsPc from "../../components/steps/StepsPc";
 //packages
 //custom components
-import CustomSection from "../components/CustomSection";
-import StepsPc from "../components/steps/StepsPc";
 
 
 function EasyStepsSections() {
