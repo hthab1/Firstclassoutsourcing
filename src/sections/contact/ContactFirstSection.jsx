@@ -1,9 +1,12 @@
 import React from "react";
+//packages
+import { useNavigate } from "react-router-dom";
 //custom components
 import CustomSection from "../../components/CustomSection";
 import MainButton from "../../components/MainButton";
 
 function ContactFirstSection() {
+  const navigate = useNavigate();
   return (
     <CustomSection
       classNameParent={`bg-secondary min-h-80vh`}
@@ -20,7 +23,12 @@ function ContactFirstSection() {
             ad minim veniam.
           </p>
           <div className="flex flex-col mt-10 items-center gap-2 w-fit">
-            <MainButton name="Get Started" />
+            <MainButton
+              name="Get Started"
+              onClick={() => {
+                navigate("/question1");
+              }}
+            />
             <span className="text-white text-sm fontOpenSans">
               Takes 2 minutes
             </span>

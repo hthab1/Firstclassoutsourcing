@@ -6,6 +6,7 @@ import Header from "../components/header&footer/Header";
 import AboutPage from "../pages/AboutPage";
 import ContactPage from "../pages/ContactPage";
 import HomePage from "../pages/HomePage";
+import Question1Page from "../pages/Question1Page";
 
 function AppRoutes() {
   const location = useLocation();
@@ -21,6 +22,7 @@ function AppRoutes() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/question1" element={<Question1Page />} />
         </Routes>
         <Footer />
       </AnimatePresence>

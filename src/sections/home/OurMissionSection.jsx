@@ -1,10 +1,13 @@
 import React from "react";
+//packages
+import { useNavigate } from "react-router-dom";
 //custom components
 import CustomSection from "../../components/CustomSection";
 import MainButton from "../../components/MainButton";
 import Mission from "../../components/Mission";
 
 function OurMissionSection() {
+  const navigate = useNavigate()
   return (
     <CustomSection classNameParent="h-fit " classNameChild="w-full py-20">
       <div className="w-full flex flex-col items-center">
@@ -19,6 +22,9 @@ function OurMissionSection() {
         <MainButton
           className="mt-[40px] hover:bg-white hover:text-secondary hover:border-secondary"
           name="Find a talent"
+          onClick={() => {
+            navigate("/question1");
+          }}
         />
       </div>
     </CustomSection>

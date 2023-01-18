@@ -49,7 +49,13 @@ function Header() {
               navigate("/contact");
             }}
           />
-          <MainButton name="Find a talent" className="scale-90" />
+          <MainButton
+            name="Find a talent"
+            className="scale-75"
+            onClick={() => {
+              navigate("/question1");
+            }}
+          />
         </div>
       </div>
     </div>
