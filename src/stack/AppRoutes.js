@@ -1,12 +1,14 @@
 import { AnimatePresence } from "framer-motion";
 import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
+//pages
 import Footer from "../components/header&footer/Footer";
 import Header from "../components/header&footer/Header";
 import AboutPage from "../pages/AboutPage";
 import ContactPage from "../pages/ContactPage";
 import HomePage from "../pages/HomePage";
 import Question1Page from "../pages/Question1Page";
+import Question2Page from "../pages/Question2Page";
 
 function AppRoutes() {
   const location = useLocation();
@@ -23,6 +25,7 @@ function AppRoutes() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/question1" element={<Question1Page />} />
+          <Route path="/question2" element={<Question2Page />} />
         </Routes>
         <Footer />
       </AnimatePresence>

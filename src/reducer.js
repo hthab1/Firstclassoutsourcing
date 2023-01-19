@@ -7,6 +7,12 @@ export const initialState = {
   phone: `1 (216) 000-000`,
   email: "Info@FirstClass.com",
   address: "Find A Location",
+  info: {
+    industry: "",
+    email: "",
+    name: "",
+    roles: [],
+  },
 };
 
 const reducer = (state = initialState, action) => {
@@ -16,7 +22,11 @@ const reducer = (state = initialState, action) => {
         ...state,
         active: action.active,
       };
-
+    case "SET_INFO":
+      return {
+        ...state,
+        info: action.info,
+      };
     default:
       return state;
   }

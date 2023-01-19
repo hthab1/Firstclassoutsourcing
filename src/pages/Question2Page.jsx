@@ -7,29 +7,33 @@ import { useNavigate } from "react-router-dom";
 //custom component
 import CustomSection from "../components/CustomSection";
 import { useStateValue } from "../StateProvider";
+//data
+import { roles } from "../data/roles";
+import Role from "../components/questions/Role";
 
-function Question1Page() {
+function Question2Page() {
   const navigate = useNavigate();
   const { state, dispatch } = useStateValue();
   //states
-  const [industry, setIndustry] = useState("");
+  const [selectedRoles, setSelectedRoles] = useState([]);
   const [error, setError] = useState(false);
+
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
 
   const handleNext = () => {
-    if (industry) {
-      dispatch({
-        type: "SET_INFO",
-        info: {
-          ...state.info,
-          industry: industry,
-        },
-      });
-      navigate("/question2");
-    } else {
+    if (selectedRoles?.length === 0) {
       setError(true);
+    } else {
+      //   dispatch({
+      //     type: "SET_INFO",
+      //     info: {
+      //       ...state.info,
+      //       industry: industry,
+      //     },
+      //   });
+      navigate("/question2");
     }
   };
 
@@ -45,7 +49,7 @@ function Question1Page() {
       className="w-full"
     >
       <CustomSection
-        classNameParent="h-100vh bg-white"
+        classNameParent="min-h-100vh bg-white py-20"
         classNameChild="w-full py-1 flex items-center justify-center"
       >
         <div className="flex flex-col w-full max-w-2xl">
@@ -57,7 +61,7 @@ function Question1Page() {
             <HiOutlineArrowNarrowRight />
           </div>
           <span className="text-secondary fontMontserrat text-4xl font-semibold mt-4">
-            What is your industry?
+            What role would you like to hire?
           </span>
           <p className="text-darkGray fontOpenSans text-lg font-normal mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
@@ -65,23 +69,21 @@ function Question1Page() {
           </p>
           <label
             htmlFor=""
-            className="fontOpenSans text-secondary text-lg font-normal mt-10"
+            className="fontOpenSans text-secondary text-lg font-normal mt-10 mb-4"
           >
-            Enter your industry:{" "}
+            Select a role:{" "}
           </label>
-          <input
-            type="text"
-            value={industry}
-            onChange={(e) => {
-              setError(false);
-              setIndustry(e.target.value);
-            }}
-            placeholder="eg.  Education, Digital Agency...."
-            className="border w-full p-4 border-quaternary rounded-xl mt-4 fontOpenSans"
-          />
+
+          {roles?.map(({ id, service }) => (
+            <Role
+              selected={selectedRoles?.find((role) => role?.id === id)}
+              name={service}
+            />
+          ))}
+
           {error && (
             <span className="text-primary fontOpenSans mt-4">
-              Please enter your industry first
+              Please select at least one role
             </span>
           )}
           <button
@@ -99,4 +101,4 @@ function Question1Page() {
   );
 }
 
-export default Question1Page;
+export default Question2Page;
