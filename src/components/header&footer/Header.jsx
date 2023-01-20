@@ -62,7 +62,13 @@ function Header() {
         />
         <div className="hidden md:flex items-center gap-6 ">
           <Tab
-            name="Our Services"
+            name="About Us"
+            onClick={() => {
+              navigate("/about");
+            }}
+          />
+          <Tab
+            name="Industries"
             onClick={() => {
               navigate("/");
               dispatch({
@@ -71,23 +77,22 @@ function Header() {
               });
             }}
           />
+
           <Tab
-            name="About Us"
+            name="Why us"
             onClick={() => {
-              navigate("/about");
-            }}
-          />
-          <Tab
-            name="Contact Us"
-            onClick={() => {
-              navigate("/contact");
+              navigate("/");
+              dispatch({
+                type: "SET_ACTIVE",
+                active: "features",
+              });
             }}
           />
           <MainButton
-            name="Find a talent"
+            name="Contact us"
             className="scale-75"
             onClick={() => {
-              navigate("/question1");
+              navigate("/contact");
             }}
           />
         </div>
@@ -107,7 +112,16 @@ function Header() {
               } md:hidden absolute w-full flex-col top-0 px-6 bg-secondary py-4 border border-b-white overflow-hidden`}
             >
               <TabMobile
-                name="Our Services"
+                name="About Us"
+                onClick={() => {
+                  setDropdown(false);
+                  setTimeout(() => {
+                    navigate("/about");
+                  }, 100);
+                }}
+              />
+              <TabMobile
+                name="Industries"
                 onClick={() => {
                   setDropdown(false);
                   setTimeout(() => {
@@ -119,30 +133,26 @@ function Header() {
                   });
                 }}
               />
+
               <TabMobile
-                name="About Us"
+                name="Why us"
                 onClick={() => {
                   setDropdown(false);
                   setTimeout(() => {
-                    navigate("/about");
+                    navigate("/");
                   }, 100);
+                  dispatch({
+                    type: "SET_ACTIVE",
+                    active: "features",
+                  });
                 }}
               />
               <TabMobile
-                name="Contact Us"
+                name="Contact us"
                 onClick={() => {
                   setDropdown(false);
                   setTimeout(() => {
                     navigate("/contact");
-                  }, 100);
-                }}
-              />
-              <TabMobile
-                name="Find a talent"
-                onClick={() => {
-                  setDropdown(false);
-                  setTimeout(() => {
-                    navigate("/question1");
                   }, 100);
                 }}
               />

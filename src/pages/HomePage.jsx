@@ -15,12 +15,17 @@ import { useStateValue } from "../StateProvider";
 function HomePage() {
   const { state, dispatch } = useStateValue();
   const servicesRef = useRef();
+  const featuresRef = useRef();
 
   useEffect(() => {
     window.scroll(0, 0);
     if (state?.active === "services") {
       setTimeout(() => {
         servicesRef.current.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    } else if (state?.active === "features") {
+      setTimeout(() => {
+        featuresRef.current.scrollIntoView({ behavior: "smooth" });
       }, 100);
     }
     dispatch({
@@ -42,7 +47,9 @@ function HomePage() {
         <ServicesSection />
       </div>
       <EasyStepsSections />
-      <FeaturesSection />
+      <div className="w-full" ref={featuresRef}>
+        <FeaturesSection />
+      </div>
       <FAQ />
       <OurMissionSection />
     </motion.div>

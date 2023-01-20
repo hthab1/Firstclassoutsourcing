@@ -11,12 +11,12 @@ function Role({ selected, onClick, name }) {
       <div
         className={`border ${
           selected ? "border-primary" : "border-quaternary"
-        } w-6 h-6 rounded-sm group-hover:border-primary flex items-center justify-center text-xl text-primary
+        } w-6 h-6 rounded-sm group-hover:border-primary flex items-center justify-center text-lg md:text-xl text-primary
         `}
       >
         {selected && <BsCheck />}
       </div>
-      <span className="fontOpenSans text-secondary text-lg group-hover:text-primary ">
+      <span className="fontOpenSans text-secondary text-base md:text-lg group-hover:text-primary ">
         {name}
       </span>
     </div>

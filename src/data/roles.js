@@ -1,19 +1,19 @@
 export const roles = [
   {
     id: 1,
-    service: "Digital Marketing",
+    service: "Marketing experts",
   },
   {
     id: 2,
-    service: "Graphic Design",
+    service: "IT experts",
   },
   {
     id: 3,
-    service: "Website Design",
+    service: "Researchers",
   },
   {
     id: 4,
-    service: "Customer Support",
+    service: "Accountants",
   },
   {
     id: 5,

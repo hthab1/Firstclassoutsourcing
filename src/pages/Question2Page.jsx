@@ -72,22 +72,22 @@ function Question2Page() {
       >
         <div className="flex flex-col w-full max-w-2xl">
           <div
-            className="flex items-center justify-end gap-2 text-darkGray text-lg w-full cursor-pointer"
+            className="flex items-center justify-end gap-2 text-darkGray text-base md:text-lg w-full cursor-pointer"
             onClick={() => handleSkip()}
           >
             <span className="fontInter">Skip</span>
             <HiOutlineArrowNarrowRight />
           </div>
-          <span className="text-secondary fontMontserrat text-4xl font-semibold mt-4">
+          <span className="text-secondary fontMontserrat text-2xl md:text-4xl font-semibold mt-4">
             What role would you like to hire?
           </span>
-          <p className="text-darkGray fontOpenSans text-lg font-normal mt-4">
+          <p className="text-darkGray fontOpenSans text-base md:text-lg font-normal mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
             consectetur porta malesuada.
           </p>
           <label
             htmlFor=""
-            className="fontOpenSans text-secondary text-lg font-normal mt-10 mb-4"
+            className="fontOpenSans text-secondary text-base md:text-lg font-normal mt-10 mb-4"
           >
             Select a role:{" "}
           </label>

@@ -50,22 +50,22 @@ function Question1Page() {
       >
         <div className="flex flex-col w-full max-w-2xl">
           <div
-            className="flex items-center justify-end gap-2 text-darkGray text-lg w-full cursor-pointer"
+            className="flex items-center justify-end gap-2 text-darkGray text-base md:text-lg w-full cursor-pointer"
             onClick={() => handleSkip()}
           >
             <span className="fontInter">Skip</span>
             <HiOutlineArrowNarrowRight />
           </div>
-          <span className="text-secondary fontMontserrat text-4xl font-semibold mt-4">
+          <span className="text-secondary fontMontserrat text-2xl md:text-4xl font-semibold mt-4">
             What is your industry?
           </span>
-          <p className="text-darkGray fontOpenSans text-lg font-normal mt-4">
+          <p className="text-darkGray fontOpenSans text-base md:text-lg font-normal mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
             consectetur porta malesuada.
           </p>
           <label
             htmlFor=""
-            className="fontOpenSans text-secondary text-lg font-normal mt-10"
+            className="fontOpenSans text-secondary text-base md:text-lg font-normal mt-10"
           >
             Enter your industry:{" "}
           </label>
@@ -88,7 +88,7 @@ function Question1Page() {
             className="w-full group bg-primary border-white border-2 hover:border-darkGray hover:bg-white py-2 flex items-center justify-center rounded-full transition-all mt-10"
             onClick={() => handleNext()}
           >
-            <div className="flex items-center justify-end gap-2 text-white group-hover:text-darkGray text-lg transition-all">
+            <div className="flex items-center justify-end gap-2 text-white group-hover:text-darkGray text-base md:text-lg transition-all">
               <span className="fontInter">Next</span>
               <HiOutlineArrowNarrowRight />
             </div>

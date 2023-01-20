@@ -11,7 +11,7 @@ function FeaturesSection() {
           image={
             "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGZsZXhpYmxlJTIwd29ya2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
           }
-          button="Contact us"
+          button="Learn more"
           description={`We can scale our resource model up and down to match your demands, whether you're operating a simple marketing campaign in a single area or a big scale worldwide program spanning numerous regions and nations.`}
           title="Flexibility"
         />
@@ -20,7 +20,7 @@ function FeaturesSection() {
             "https://images.unsplash.com/photo-1554774853-aae0a22c8aa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZml0YWJsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
           }
           button="Let's talk"
-          description={`We recruit a variety of pros who charge reasonable costs. That is, you may save money by investing in fixed assets and fixed costs. You can also use these monies to support your main company tasks. This results in cheaper costs and less risk for you.`}
+          description={`We recruit a variety of Firstclass pros at a reasonable rate. You can grow your business with our well trained and cost effective employees  `}
           title="Cost Effective"
           reverse
         />

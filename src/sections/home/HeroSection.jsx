@@ -34,9 +34,9 @@ function HeroSection() {
         </p>
         <MainButton
           className="mt-[70px]"
-          name="Talk to us"
+          name="Hire Firstclass Talent"
           onClick={() => {
-            navigate("/contact");
+            navigate("/question1");
           }}
         />
       </div>

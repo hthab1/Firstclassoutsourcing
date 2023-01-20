@@ -62,16 +62,16 @@ function Question3Page() {
         classNameChild="w-full py-1 flex items-center justify-center"
       >
         <div className="flex flex-col w-full max-w-2xl">
-          <span className="text-secondary fontMontserrat text-4xl font-semibold mt-4">
+          <span className="text-secondary fontMontserrat text-2xl md:text-4xl font-semibold mt-4">
             Success! Let’s contact
           </span>
-          <p className="text-darkGray fontOpenSans text-lg font-normal mt-4">
+          <p className="text-darkGray fontOpenSans text-base md:text-lg font-normal mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
             consectetur porta malesuada.
           </p>
           <label
             htmlFor=""
-            className="fontOpenSans text-secondary text-lg font-normal mt-10"
+            className="fontOpenSans text-secondary text-base md:text-lg font-normal mt-10"
           >
             Email address :
           </label>
@@ -97,7 +97,7 @@ function Question3Page() {
           )}
           <label
             htmlFor=""
-            className="fontOpenSans text-secondary text-lg font-normal mt-4"
+            className="fontOpenSans text-secondary text-base md:text-lg font-normal mt-4"
           >
             Your name :
           </label>
@@ -126,7 +126,7 @@ function Question3Page() {
             className="w-full group bg-primary border-white border-2 hover:border-darkGray hover:bg-white py-2 flex items-center justify-center rounded-full transition-all mt-10"
             onClick={() => handleDone()}
           >
-            <div className="flex items-center justify-end gap-2 text-white group-hover:text-darkGray text-lg transition-all">
+            <div className="flex items-center justify-end gap-2 text-white group-hover:text-darkGray text-base md:text-lg transition-all">
               <span className="fontInter">Done</span>
               <HiOutlineArrowNarrowRight />
             </div>

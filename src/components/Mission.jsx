@@ -7,15 +7,15 @@ function Mission({ button, title, image, description }) {
   const navigate = useNavigate();
   return (
     <div
-      className={`flex flex-row w-full items-center justify-between my-[60px]`}
+      className={`flex flex-col-reverse md:flex-row w-full items-center justify-between my-[60px]`}
     >
-      <div className="w-5/12">
-        <h3 className="text-secondary text-4xl w-80 font-semibold mb-4 fontMontserrat">
+      <div className="w-full md:w-5/12 mt-6 md:mt-0">
+        <h3 className="text-secondary text-3xl md:text-4xl w-80 font-semibold mb-4 fontMontserrat">
           {title}
         </h3>
         <p className="text-base fontOpenSans mb-4 ">{description}</p>
         <div
-          className="text-primary cursor-pointer font-light text-lg flex items-center gap-4 mt-10 hover:animate-pulse"
+          className="text-primary cursor-pointer font-light text-base md:text-lg flex items-center gap-4 mt-10 hover:animate-pulse"
           onClick={() => {
             navigate("/about");
           }}
@@ -24,7 +24,7 @@ function Mission({ button, title, image, description }) {
           <HiOutlineArrowNarrowRight />
         </div>
       </div>
-      <img src={image} alt="" className="flex w-5/12 h-[300px] object-cover" />
+      <img src={image} alt="" className="flex w-full md:w-5/12 h-[400px] md:h-[300px] object-cover" />
     </div>
   );
 }

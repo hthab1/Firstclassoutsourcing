@@ -26,7 +26,7 @@ function StepsPc() {
             id="1"
             target={2}
             number={1}
-            title="Book a call"
+            title="Contact us"
             description="Choose time and date that is convenient for you"
             small
           />

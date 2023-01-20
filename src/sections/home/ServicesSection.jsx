@@ -40,31 +40,31 @@ function ServicesSection() {
           Designed for your company
         </span>
         <p className="text-base md:text-lg font-normal text-darkGray max-w-lg mt-4 fontOpenSans">
-          We assemble a team of dedicated professionals that are uniquely
-          equipped to meet your needs.
+          We take time to understand your business before providing you with
+          Firstclass talent tailored for your company
         </p>
         <div className="w-full grid-container-3 items-center gap-1 justify-center mt-8 mb-[40px]">
           <Service
             icon={Digital}
             iconActive={DigitalActive}
-            name="Digital Marketing"
+            name="Marketing experts"
             description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur porta malesuada.`}
             onClick={() =>
               handleGet({
                 id: 1,
-                service: "Digital Marketing",
+                service: "Marketing experts",
               })
             }
           />
           <Service
             icon={Graphics}
             iconActive={GraphicsActive}
-            name="Graphic Design"
+            name="IT experts"
             description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur porta malesuada.`}
             onClick={() =>
               handleGet({
                 id: 2,
-                service: "Graphic Design",
+                service: "IT experts",
               })
             }
           />
@@ -72,24 +72,24 @@ function ServicesSection() {
             icon={Website}
             iconActive={WebsiteActive}
             sm
-            name="Website Design"
+            name="Researchers"
             description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur porta malesuada.`}
             onClick={() =>
               handleGet({
                 id: 3,
-                service: "Website Design",
+                service: "Researchers",
               })
             }
           />
           <Service
             icon={Customer}
             iconActive={CustomerActive}
-            name="Customer Support"
+            name="Accountants"
             description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur porta malesuada.`}
             onClick={() =>
               handleGet({
                 id: 4,
-                service: "Customer Support",
+                service: "Accountants",
               })
             }
           />

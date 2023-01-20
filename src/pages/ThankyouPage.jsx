@@ -23,14 +23,14 @@ function ThankyouPage() {
         classNameChild="w-full py-1 flex items-center justify-center"
       >
         <div className="flex flex-col w-full max-w-2xl">
-          <span className="text-secondary fontMontserrat text-4xl font-semibold mt-4">
+          <span className="text-secondary fontMontserrat text-2xl md:text-4xl font-semibold mt-4">
             Thank you!
           </span>
-          <p className="text-darkGray fontOpenSans text-lg font-normal mt-4">
+          <p className="text-darkGray fontOpenSans text-base md:text-lg font-normal mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
             consectetur porta malesuada.
           </p>
-          <span className="text-secondary fontOpenSans mt-10 font-semibold text-xl">
+          <span className="text-secondary fontOpenSans mt-10 font-semibold text-lg md:text-xl">
             Next steps
           </span>
           <div className="hidden sm:flex">

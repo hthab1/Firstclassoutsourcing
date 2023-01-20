@@ -14,10 +14,10 @@ function ContactFirstSection() {
     >
       <div className="flex justify-between items-center w-full">
         <div className="flex flex-col">
-          <h1 className="text-white font-semibold text-6xl fontMontserrat">
+          <h1 className="text-white font-semibold text-3xl md:text-6xl fontMontserrat">
             Contact FirstClass
           </h1>
-          <p className="text-white fontOpenSans text-lg max-w-lg mt-4">
+          <p className="text-white fontOpenSans text-base md:text-lg max-w-lg mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.
@@ -34,7 +34,7 @@ function ContactFirstSection() {
             </span>
           </div>
         </div>
-        <div className="flex flex-1 items-center justify-center">
+        <div className="hidden lg:flex flex-1 items-center justify-center">
           <img
             src={require("../../assets/contact/ContactImage.png")}
             alt="contact"
