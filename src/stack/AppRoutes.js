@@ -21,7 +21,9 @@ function AppRoutes() {
       style={{ position: "relative" }}
     >
       <AnimatePresence exitBeforeEnter>
-        <Header />
+        <div className="fixed w-full z-50 top-0">
+          <Header />
+        </div>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />

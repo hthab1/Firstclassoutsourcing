@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 //packages
 import { motion } from "framer-motion";
+//sections
 import ContactFirstSection from "../sections/contact/ContactFirstSection";
 import GeneralInquiriesSection from "../sections/contact/GeneralInquiriesSection";
-//sections
 
 function ContactPage() {
   useEffect(() => {
@@ -16,8 +16,8 @@ function ContactPage() {
       exit={{ opacity: 0 }}
       className="bg-white"
     >
-        <ContactFirstSection />
-        <GeneralInquiriesSection />
+      <ContactFirstSection />
+      <GeneralInquiriesSection />
     </motion.div>
   );
 }

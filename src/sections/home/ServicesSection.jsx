@@ -36,10 +36,10 @@ function ServicesSection() {
   return (
     <CustomSection classNameParent="h-fit" classNameChild="w-full py-10">
       <div className="w-full">
-        <span className="text-secondary fontMontserrat font-semibold text-4xl">
+        <span className="text-secondary fontMontserrat font-semibold text-3xl md:text-4xl">
           Designed for your company
         </span>
-        <p className="text-lg font-normal text-darkGray max-w-lg mt-4 fontOpenSans">
+        <p className="text-base md:text-lg font-normal text-darkGray max-w-lg mt-4 fontOpenSans">
           We assemble a team of dedicated professionals that are uniquely
           equipped to meet your needs.
         </p>

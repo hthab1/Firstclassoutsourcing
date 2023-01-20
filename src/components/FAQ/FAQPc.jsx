@@ -13,7 +13,7 @@ function FAQPc({ className }) {
   }, [selected]);
 
   return (
-    <div className={` flex w-100 mt-10 mb-[40px] ${className}`}>
+    <div className={`hidden lg:flex w-100 mt-10 mb-[40px] ${className}`}>
       <div className="flex flex-col flex-1">
         {FAQData?.map(({ id, question }) => (
           <QuestionPc
@@ -26,7 +26,9 @@ function FAQPc({ className }) {
           />
         ))}
       </div>
-      <div className="flex flex-1 p-10 font-darkGray fontOpenSans text-lg">{description}</div>
+      <div className="flex flex-1 p-10 font-darkGray fontOpenSans text-lg">
+        {description}
+      </div>
     </div>
   );
 }

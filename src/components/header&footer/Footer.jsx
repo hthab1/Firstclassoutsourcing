@@ -39,7 +39,7 @@ function Footer() {
             <img
               src={Logo}
               alt="logo"
-              className="w-48 cursor-pointer"
+              className="w-32 sm:w-40 lg:w-48 cursor-pointer"
               onClick={() => {
                 navigate("/");
                 dispatch({

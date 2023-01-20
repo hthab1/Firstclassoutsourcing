@@ -1,3 +1,5 @@
+import Company from "./assets/trustedCompanies/CompanyIcon.svg";
+
 export const initialState = {
   active: "home",
   facebook: "https://www.facebook.com/",
@@ -7,6 +9,7 @@ export const initialState = {
   phone: `1 (216) 000-000`,
   email: "Info@FirstClass.com",
   address: "Find A Location",
+  clients: [Company, Company, Company, Company, Company, Company, Company],
   info: {
     industry: "",
     email: "",
