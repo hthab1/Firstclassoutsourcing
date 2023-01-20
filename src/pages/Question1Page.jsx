@@ -12,7 +12,7 @@ function Question1Page() {
   const navigate = useNavigate();
   const { state, dispatch } = useStateValue();
   //states
-  const [industry, setIndustry] = useState("");
+  const [industry, setIndustry] = useState(state?.info?.industry);
   const [error, setError] = useState(false);
   useEffect(() => {
     window.scroll(0, 0);

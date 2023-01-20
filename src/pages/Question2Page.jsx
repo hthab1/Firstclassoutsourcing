@@ -15,7 +15,7 @@ function Question2Page() {
   const navigate = useNavigate();
   const { state, dispatch } = useStateValue();
   //states
-  const [selectedRoles, setSelectedRoles] = useState([]);
+  const [selectedRoles, setSelectedRoles] = useState(state?.info?.roles);
   const [error, setError] = useState(false);
 
   useEffect(() => {
@@ -26,19 +26,37 @@ function Question2Page() {
     if (selectedRoles?.length === 0) {
       setError(true);
     } else {
-      //   dispatch({
-      //     type: "SET_INFO",
-      //     info: {
-      //       ...state.info,
-      //       industry: industry,
-      //     },
-      //   });
-      navigate("/question2");
+      dispatch({
+        type: "SET_INFO",
+        info: {
+          ...state.info,
+          roles: selectedRoles,
+        },
+      });
+      navigate("/question3");
     }
   };
 
   const handleSkip = () => {
-    navigate("/question2");
+    navigate("/question3");
+  };
+
+  const handleSelect = (id) => {
+    setError(false)
+    if (selectedRoles?.find((role) => role?.id === id)) {
+      let filteredValues = [];
+      const filtered = selectedRoles.filter((role) => role?.id !== id);
+      filtered.map((role) => {
+        if (role?.id) {
+          return filteredValues.push(role);
+        }
+        return true;
+      });
+      setSelectedRoles(filteredValues);
+    } else {
+      const selectedRole = roles?.find((role) => role?.id === id);
+      setSelectedRoles([...selectedRoles, selectedRole]);
+    }
   };
 
   return (
@@ -78,6 +96,7 @@ function Question2Page() {
             <Role
               selected={selectedRoles?.find((role) => role?.id === id)}
               name={service}
+              onClick={() => handleSelect(id)}
             />
           ))}
 

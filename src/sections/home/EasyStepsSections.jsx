@@ -1,9 +1,8 @@
 import React from "react";
-import CustomSection from "../../components/CustomSection";
-import StepsPc from "../../components/steps/StepsPc";
-//packages
 //custom components
-
+import CustomSection from "../../components/CustomSection";
+import StepsMobile from "../../components/steps/StepsMobile";
+import StepsPc from "../../components/steps/StepsPc";
 
 function EasyStepsSections() {
   return (
@@ -14,7 +13,12 @@ function EasyStepsSections() {
       <h2 className="text-secondary font-semibold text-4xl fontMontserrat text-center max-w-md mt-[70px] mb-8">
         Easy steps to your remedy
       </h2>
-      <StepsPc />
+      <div className="hidden lg:flex">
+        <StepsPc />
+      </div>
+      <div className="lg:hidden">
+        <StepsMobile />
+      </div>
     </CustomSection>
   );
 }

@@ -9,6 +9,8 @@ import ContactPage from "../pages/ContactPage";
 import HomePage from "../pages/HomePage";
 import Question1Page from "../pages/Question1Page";
 import Question2Page from "../pages/Question2Page";
+import Question3Page from "../pages/Question3Page";
+import ThankyouPage from "../pages/ThankyouPage";
 
 function AppRoutes() {
   const location = useLocation();
@@ -26,6 +28,8 @@ function AppRoutes() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/question1" element={<Question1Page />} />
           <Route path="/question2" element={<Question2Page />} />
+          <Route path="/question3" element={<Question3Page />} />
+          <Route path="/thankyou" element={<ThankyouPage />} />
         </Routes>
         <Footer />
       </AnimatePresence>

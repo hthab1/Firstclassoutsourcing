@@ -6,7 +6,7 @@ import StepPc from "./StepPc";
 
 function StepsPc() {
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <ArcherContainer strokeColor="#219AD3" className="w-full">
         <div className="flex w-full gap-2 justify-between mt-10 mb-10">
           <ArcherElement
@@ -28,7 +28,7 @@ function StepsPc() {
             number={1}
             title="Book a call"
             description="Choose time and date that is convenient for you"
-           small
+            small
           />
           <StepPc
             id="2"

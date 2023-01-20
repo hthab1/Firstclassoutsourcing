@@ -2,9 +2,12 @@ import React from "react";
 //package
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
-function Service({ icon, iconActive, name, description, sm }) {
+function Service({ icon, iconActive, name, description, sm, onClick }) {
   return (
-    <div className="serviceSize group bg-teritiary hover:bg-secondary transition-all cursor-pointer p-10 flex flex-col justify-between">
+    <div
+      className="serviceSize group bg-teritiary hover:bg-secondary transition-all cursor-pointer p-10 flex flex-col justify-between"
+      onClick={onClick}
+    >
       <div className="flex flex-col">
         <div className="h-16 mb-2 flex items-center">
           <img
