@@ -43,8 +43,6 @@ function Header() {
     };
   }, [dropdown]);
 
-  console.log(dropdown);
-
   return (
     <div className="w-full bg-secondary flex flex-col items-center z-50 relative">
       <div className="max-w-screen-2xl w-full p-2 px-6 pt-4 flex items-center justify-between ">

@@ -1,27 +1,86 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 //packages
 import { useNavigate } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
 //custom components
+import { useStateValue } from "../../StateProvider";
+import { ConfigUrl } from "../../config/ConfigUrl";
 import CustomSection from "../CustomSection";
+import Tab from "./Tab";
 //assets
 import Logo from "../../assets/Logo.svg";
-import Tab from "./Tab";
-import { useStateValue } from "../../StateProvider";
+
+const CustomForm = ({
+  email,
+  setEmail,
+  setError,
+  onValidated,
+  message,
+  status,
+  setSubscribed,
+}) => {
+  const navigate = useNavigate();
+  const { dispatch } = useStateValue();
+
+  const validateEmail = (email) => {
+    const tested = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return tested.test(email);
+  };
+
+  useEffect(() => {
+    if (status === "success") {
+      setSubscribed(true);
+      setTimeout(() => {
+        navigate("/");
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          window.location.reload();
+        }, 100);
+      }, 1500);
+    }
+  }, [status, message, dispatch, navigate, setSubscribed]);
+
+  const handleSubscribe = async () => {
+    if (validateEmail(email)) {
+      onValidated({
+        MERGE0: email,
+      });
+    } else {
+      setError(true);
+    }
+  };
+
+  return (
+    <div className="flex items-center">
+      <input
+        type="text"
+        placeholder="Enter your email address..."
+        value={email}
+        onChange={(e) => {
+          setError(false);
+          setEmail(e.target.value);
+        }}
+        name=""
+        id=""
+        className="h-10 md:h-12 items-center flex px-4 w-[200px] md:w-[300px] bg-subscribeInput fontOpenSans font-semibold text-white text-base md:text-lg"
+      />
+      <button
+        className="items-center h-10 md:h-12 items-center justify-center px-10 justify-center bg-white font-bold fontOpenSans"
+        onClick={() => handleSubscribe()}
+      >
+        Subscribe
+      </button>
+    </div>
+  );
+};
 
 function Footer() {
   const navigate = useNavigate();
   const { state, dispatch } = useStateValue();
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
-
-  const handleSubscribe = async () => {
-    setSubscribed(true);
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-      window.location.reload();
-    }, 1500);
-  };
+  const [error, setError] = useState(false);
 
   return (
     <CustomSection
@@ -108,6 +167,11 @@ function Footer() {
             </a>
           </div>
           <div className="flex flex-col relative">
+            {error && (
+              <span className="text-white absolute left-4 bottom-20">
+                Please enter a valid email
+              </span>
+            )}
             {subscribed && (
               <span className="text-primary absolute left-4 bottom-20">
                 Thanks for subscribing!
@@ -116,23 +180,22 @@ function Footer() {
             <span className="text-white font-bold fontOpenSans text-base md:text-lg mb-2 pl-4 ">
               Get a Firstclass Outsourcing experience
             </span>
-            <div className="flex items-center">
-              <input
-                type="text"
-                placeholder="Enter your email address..."
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                name=""
-                id=""
-                className="h-10 md:h-12 items-center flex px-4 w-[200px] md:w-[300px] bg-subscribeInput fontOpenSans font-semibold text-white text-base md:text-lg"
-              />
-              <button
-                className="items-center h-10 md:h-12 items-center justify-center px-10 justify-center bg-white font-bold fontOpenSans"
-                onClick={() => handleSubscribe()}
-              >
-                Subscribe
-              </button>
-            </div>
+            <MailchimpSubscribe
+              url={ConfigUrl.postUrl}
+              render={({ subscribe, status, message }) => (
+                <CustomForm
+                  email={email}
+                  setEmail={setEmail}
+                  setError={setError}
+                  setSubscribed={setSubscribed}
+                  status={status}
+                  message={message}
+                  onValidated={(formData) => {
+                    subscribe(formData);
+                  }}
+                />
+              )}
+            />
           </div>
         </div>
       </div>
