@@ -14,7 +14,7 @@ function StepsMobile() {
             target={2}
             number={1}
             title="Contact us"
-            description="Choose time and date that is convenient for you"
+            description="Shoot us an email, or fill out a form which only takes 2 minutes"
             small
           />
           <StepMobile
@@ -22,7 +22,7 @@ function StepsMobile() {
             target={3}
             number={2}
             title="Tell us about your needs"
-            description="Schedule a call and tell us how we can help you with"
+            description="We will get back to you in 24 hours so that you can tell us your needs"
           />
           <StepMobile
             id="3"

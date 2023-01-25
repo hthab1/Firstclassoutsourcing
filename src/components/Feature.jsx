@@ -10,7 +10,7 @@ function Feature({ button, title, image, description, reverse }) {
         reverse && "md:flex-row-reverse"
       }`}
     >
-      <img src={image} alt="" className="flex w-full md:w-5/12 h-[400px] md:h-[300px] object-cover" />
+      <img src={image} alt="" className="flex w-full md:w-5/12 h-[400px] md:h-[300px] object-cover rounded-2xl" />
       <div className="w-full md:w-5/12 mt-6 md:mt-0 ">
         <h3 className="text-secondary text-3xl md:text-4xl md:w-80 font-semibold mb-4 fontMontserrat">
           {title}

@@ -9,7 +9,7 @@ import MainButton from "../MainButton";
 import Tab from "./Tab";
 import TabMobile from "./TabMobile";
 //assets
-import Logo from "../../assets/Logo.svg";
+import { Images } from "../../utilities/Image";
 
 function Header() {
   const navigate = useNavigate();
@@ -47,7 +47,7 @@ function Header() {
     <div className="w-full bg-secondary flex flex-col items-center z-50 relative">
       <div className="max-w-screen-2xl w-full p-2 px-6 pt-4 flex items-center justify-between ">
         <img
-          src={Logo}
+          src={Images.logo}
           alt="logo"
           className="w-32 sm:w-40 lg:w-48  cursor-pointer"
           onClick={() => {

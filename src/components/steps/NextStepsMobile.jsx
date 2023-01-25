@@ -14,7 +14,7 @@ function NextStepsMobile() {
             target={1}
             number={2}
             title="Tell us about your needs"
-            description="Schedule a call and tell us how we can help you with"
+            description="We will get back to you in 24 hours so that you can tell us your needs"
           />
           <NextStepMobile
             id="1"

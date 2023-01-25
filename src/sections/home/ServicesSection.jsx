@@ -6,18 +6,7 @@ import { useStateValue } from "../../StateProvider";
 import CustomSection from "../../components/CustomSection";
 import Service from "../../components/Service";
 //assets
-import Customer from "../../assets/services/CustomerIcon.svg";
-import CustomerActive from "../../assets/services/CustomerActiveIcon.svg";
-import Digital from "../../assets/services/DigitalIcon.svg";
-import DigitalActive from "../../assets/services/DigitalActiveIcon.svg";
-import Graphics from "../../assets/services/GraphicsIcon.svg";
-import GraphicsActive from "../../assets/services/GraphicsActiveIcon.svg";
-import Others from "../../assets/services/OthersIcon.svg";
-import OthersActive from "../../assets/services/OthersActiveIcon.svg";
-import Project from "../../assets/services/ProjectIcon.svg";
-import ProjectActive from "../../assets/services/ProjectActiveIcon.svg";
-import Website from "../../assets/services/WebsiteIcon.svg";
-import WebsiteActive from "../../assets/services/WebsiteActiveIcon.svg";
+import { Images } from "../../utilities/Image";
 
 function ServicesSection() {
   const navigate = useNavigate();
@@ -45,10 +34,10 @@ function ServicesSection() {
         </p>
         <div className="w-full grid-container-3 items-center gap-1 justify-center mt-8 mb-[40px]">
           <Service
-            icon={Digital}
-            iconActive={DigitalActive}
+            icon={Images.services.service1}
+            iconActive={Images.services.serviceActive1}
             name="Marketing experts"
-            description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur porta malesuada.`}
+            description={`Brand marketing experts, Email marketing experts and Digital marketing experts that are skilled in Lead Capturing and Conversion. `}
             onClick={() =>
               handleGet({
                 id: 1,
@@ -57,10 +46,10 @@ function ServicesSection() {
             }
           />
           <Service
-            icon={Graphics}
-            iconActive={GraphicsActive}
+            icon={Images.services.service2}
+            iconActive={Images.services.serviceActive2}
             name="IT experts"
-            description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur porta malesuada.`}
+            description={`Software engineers, developers, and architects with extensive experience in hundreds of technologies.`}
             onClick={() =>
               handleGet({
                 id: 2,
@@ -69,11 +58,11 @@ function ServicesSection() {
             }
           />
           <Service
-            icon={Website}
-            iconActive={WebsiteActive}
+            icon={Images.services.service3}
+            iconActive={Images.services.serviceActive3}
             sm
             name="Researchers"
-            description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur porta malesuada.`}
+            description={`Researchers that are experts in planning and executing experiments, analysing data, writing reports`}
             onClick={() =>
               handleGet({
                 id: 3,
@@ -82,10 +71,10 @@ function ServicesSection() {
             }
           />
           <Service
-            icon={Customer}
-            iconActive={CustomerActive}
+            icon={Images.services.service4}
+            iconActive={Images.services.serviceActive4}
             name="Accountants"
-            description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur porta malesuada.`}
+            description={`Experts that will help you with your cash flow, debtors and improving your record-keeping`}
             onClick={() =>
               handleGet({
                 id: 4,
@@ -94,10 +83,10 @@ function ServicesSection() {
             }
           />
           <Service
-            icon={Project}
-            iconActive={ProjectActive}
+            icon={Images.services.service5}
+            iconActive={Images.services.serviceActive5}
             name="Project Managers"
-            description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur porta malesuada.`}
+            description={`Digital and technical project managers, and those with experience in a variety of project management tools, frameworks, and styles.`}
             onClick={() =>
               handleGet({
                 id: 5,
@@ -106,10 +95,10 @@ function ServicesSection() {
             }
           />
           <Service
-            icon={Others}
-            iconActive={OthersActive}
+            icon={Images.services.service6}
+            iconActive={Images.services.serviceActive6}
             name="Others"
-            description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur porta malesuada.`}
+            description={`Graphics designers, UI/UX designers, Social media managers and others`}
             onClick={() =>
               handleGet({
                 id: 6,

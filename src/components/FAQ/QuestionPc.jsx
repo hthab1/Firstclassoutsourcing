@@ -17,13 +17,24 @@ function QuestionPc({ question, onClick, selected }) {
       >
         <BsChevronRight />
       </span>
-      <span
-        className={` absolute ml-8 transition-all group-hover:right-0 ${
-          selected ? "text-primary right-0" : "text-darkGray"
-        } fontOpenSans text-lg font-normal`}
+      <div
+        className={`flex flex-1 items-center ${
+          selected ? "justify-end" : "justify-start"
+        } group-hover:justify-end`}
       >
-        {question}
-      </span>
+        <span
+          className={`ml-8 transition-all group-hover:right-0 ${
+            selected ? "text-primary right-0" : "text-darkGray"
+          } fontOpenSans text-lg font-normal`}
+        >
+          {question}
+        </span>
+        <div
+          className={`flex ${
+            selected ? "w-0" : "w-20"
+          } group-hover:w-0 transition-all`}
+        ></div>
+      </div>
     </div>
   );
 }

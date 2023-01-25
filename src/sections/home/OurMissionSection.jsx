@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import CustomSection from "../../components/CustomSection";
 import MainButton from "../../components/MainButton";
 import Mission from "../../components/Mission";
+//assets
+import { Images } from "../../utilities/Image";
 
 function OurMissionSection() {
   const navigate = useNavigate();
@@ -14,7 +16,7 @@ function OurMissionSection() {
         <Mission
           title="Our Mission"
           description={`Our mission is to support English speaking businesses with highly qualified and highly cost effective Firstclass talents. `}
-          image="https://images.unsplash.com/photo-1638866411782-5f59287c19e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1220&q=80"
+          image={Images.ourMission.mission}
         />
         <h2 className="text-secondary font-semibold fontMontserrat text-3xl md:text-4xl text-center md:w-[500px] mt-[100px]">
           Let’s grow your business together

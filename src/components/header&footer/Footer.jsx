@@ -9,7 +9,7 @@ import { ConfigUrl } from "../../config/ConfigUrl";
 import CustomSection from "../CustomSection";
 import Tab from "./Tab";
 //assets
-import Logo from "../../assets/Logo.svg";
+import { Images } from "../../utilities/Image";
 
 const CustomForm = ({
   email,
@@ -91,7 +91,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row justify-between">
           <div className="flex flex-col">
             <img
-              src={Logo}
+              src={Images.logo}
               alt="logo"
               className="w-32 sm:w-40 lg:w-48 cursor-pointer"
               onClick={() => {

@@ -33,7 +33,7 @@ function StepPc({ title, description, number, id, target, small }) {
       <span className="text-secondary text-xl font-semibold fontOpenSans mt-4">
         {title}
       </span>
-      <span className="text-secondary text-lg text-darkGray font-normal fontOpenSans text-center mt-4">
+      <span className="text-secondary text-base text-darkGray font-normal w-5/6 fontOpenSans text-center mt-4">
         {description}
       </span>
     </div>

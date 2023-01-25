@@ -24,7 +24,7 @@ function Mission({ button, title, image, description }) {
           <HiOutlineArrowNarrowRight />
         </div>
       </div>
-      <img src={image} alt="" className="flex w-full md:w-5/12 h-[400px] md:h-[300px] object-cover" />
+      <img src={image} alt="" className="flex w-full md:w-5/12 h-[400px] md:h-[300px] object-cover rounded-2xl" />
     </div>
   );
 }

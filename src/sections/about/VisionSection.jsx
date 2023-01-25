@@ -12,15 +12,15 @@ function VisionSection() {
       <div className="flex flex-row items-row justify-between flex-wrap my-[60px]">
         <Value
           name="Mission"
-          description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `}
+          description={`To provide highly skilled and cost-effective Firstclass talent to English-speaking businesses.`}
         />
         <Value
           name="Vision"
-          description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `}
+          description={`To link the business world with talented people all across the world.`}
         />
         <Value
           name="Value"
-          description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `}
+          description={`The personal connection we have with each and every client`}
         />
       </div>
     </CustomSection>

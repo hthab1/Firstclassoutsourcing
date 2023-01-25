@@ -9,8 +9,7 @@ function AboutSecondSection() {
       classNameChild={`w-full flex flex-col items-center justify-center`}
     >
       <h3 className="text-secondary fontRaleway text-2xl md:text-4xl font-medium px-4 text-center max-w-2xl my-[150px]">
-        We recruit experts and train them to understand your products, services,
-        and company policies.
+        We provide Firstclass talent tailored to your companies requirement
       </h3>
     </CustomSection>
   );

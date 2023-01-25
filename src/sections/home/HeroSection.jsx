@@ -6,6 +6,7 @@ import CustomSection from "../../components/CustomSection";
 import MainButton from "../../components/MainButton";
 //assets
 import HeroImage from "../../components/HeroImage";
+import { Images } from "../../utilities/Image";
 
 function HeroSection() {
   const navigate = useNavigate();
@@ -17,11 +18,12 @@ function HeroSection() {
       <div className="absolute w-full h-full flex flex-row justify-end"></div>
       <div className="absolute w-full h-full hidden md:flex flex-row items-center justify-end">
         <div className="flex flex-col mx-8 gap-y-6">
-          <HeroImage src={require("../../assets/hero/Hero1.png")} />
+          <HeroImage src={Images.hero.hero1} />
         </div>
         <div className="flex flex-col gap-y-6">
-          <HeroImage src={require("../../assets/hero/Hero2.png")} />
-          <HeroImage src={require("../../assets/hero/Hero3.png")} />
+          <HeroImage src={Images.hero.hero2} />
+          <HeroImage src={Images.hero.hero3
+          } />
         </div>
       </div>
       <div className="flex flex-col items-start justify-center w-full">

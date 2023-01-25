@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 //custom components
 import CustomSection from "../../components/CustomSection";
 import MainButton from "../../components/MainButton";
+//assets
+import { Images } from "../../utilities/Image";
 
 function ContactFirstSection() {
   const navigate = useNavigate();
@@ -18,9 +20,7 @@ function ContactFirstSection() {
             Contact FirstClass
           </h1>
           <p className="text-white fontOpenSans text-base md:text-lg max-w-lg mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
+            Tell us a little about your bussiness
           </p>
           <div className="flex flex-col mt-10 items-center gap-2 w-fit">
             <MainButton
@@ -30,13 +30,13 @@ function ContactFirstSection() {
               }}
             />
             <span className="text-white text-sm fontOpenSans">
-              Takes 2 minutes
+              Takes only 2 minutes
             </span>
           </div>
         </div>
         <div className="hidden lg:flex flex-1 items-center justify-center">
           <img
-            src={require("../../assets/contact/ContactImage.png")}
+            src={Images.contact.hero}
             alt="contact"
             className="rounded-3xl object-cover w-[500px] h-[300px]"
           />

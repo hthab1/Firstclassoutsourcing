@@ -36,7 +36,7 @@ function StepMobile({ title, description, number, id, target, small }) {
         <span className="text-secondary text-xl font-semibold fontOpenSans mt-4">
           {title}
         </span>
-        <span className="text-secondary text-lg text-darkGray font-normal fontOpenSans mt-2">
+        <span className="text-secondary text-base text-darkGray font-normal fontOpenSans mt-2">
           {description}
         </span>
       </div>
