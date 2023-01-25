@@ -155,8 +155,7 @@ function Question3Page() {
             Success! Let’s contact
           </span>
           <p className="text-darkGray fontOpenSans text-base md:text-lg font-normal mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-            consectetur porta malesuada.
+            Please enter your email and full name so that we can get back to you
           </p>
           <MailchimpSubscribe
             url={ConfigUrl.postUrl}

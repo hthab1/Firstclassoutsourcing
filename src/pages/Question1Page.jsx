@@ -60,8 +60,7 @@ function Question1Page() {
             What is your industry?
           </span>
           <p className="text-darkGray fontOpenSans text-base md:text-lg font-normal mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-            consectetur porta malesuada.
+            Tell us about the industry in which your company operates.
           </p>
           <label
             htmlFor=""

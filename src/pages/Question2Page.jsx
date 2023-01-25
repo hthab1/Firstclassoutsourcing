@@ -42,7 +42,7 @@ function Question2Page() {
   };
 
   const handleSelect = (id) => {
-    setError(false)
+    setError(false);
     if (selectedRoles?.find((role) => role?.id === id)) {
       let filteredValues = [];
       const filtered = selectedRoles.filter((role) => role?.id !== id);
@@ -82,8 +82,7 @@ function Question2Page() {
             What role would you like to hire?
           </span>
           <p className="text-darkGray fontOpenSans text-base md:text-lg font-normal mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-            consectetur porta malesuada.
+            Choose the type of professionals you are looking for.
           </p>
           <label
             htmlFor=""

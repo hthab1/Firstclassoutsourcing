@@ -27,8 +27,8 @@ function ThankyouPage() {
             Thank you!
           </span>
           <p className="text-darkGray fontOpenSans text-base md:text-lg font-normal mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-            consectetur porta malesuada.
+            This is the beginning of our partnership, We will get back to you in
+            24 hours
           </p>
           <span className="text-secondary fontOpenSans mt-10 font-semibold text-lg md:text-xl">
             Next steps
