@@ -8,7 +8,7 @@ function SocialMedia({ title, image, description }) {
   const { state } = useStateValue();
   return (
     <div
-      className={`flex flex-col md:flex-row w-full items-center justify-between my-[60px]`}
+      className={`flex flex-col md:flex-row w-full items-center justify-between my-[70px] mb-[150px]`}
     >
       <img
         src={image}
@@ -20,7 +20,7 @@ function SocialMedia({ title, image, description }) {
           {title}
         </h3>
         <p className="text-base fontOpenSans mb-4 ">{description}</p>
-        <div className="flex gap-4 text-secondary opacity-40 text-2xl md:text-3xl mt-10">
+        <div className="flex gap-4 text-secondary opacity-40 text-2xl md:text-5xl mt-10">
           <a
             className="cursor-pointer"
             target="_blank"

@@ -12,7 +12,7 @@ function OurMissionSection() {
   const navigate = useNavigate();
   return (
     <CustomSection classNameParent="h-fit " classNameChild="w-full py-20">
-      <div className="w-full flex flex-col items-center">
+      <div className="w-full flex flex-col items-center mb-20">
         <Mission
           title="Our Mission"
           description={`Our mission is to support English speaking businesses with highly qualified and highly cost effective Firstclass talents. `}

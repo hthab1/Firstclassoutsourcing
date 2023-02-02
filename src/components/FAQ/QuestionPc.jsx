@@ -8,7 +8,7 @@ function QuestionPc({ question, onClick, selected }) {
       className={`w-11/12 group flex items-center cursor-pointer my-2  transition-all relative py-4 border-b-2  ${
         selected ? "border-primary" : "border-darkGray"
       }`}
-      onClick={onClick}
+      onMouseOver={onClick}
     >
       <span
         className={`flex text-primary group-hover:text-quaternary transition-all ${

@@ -11,7 +11,7 @@ function FeaturesSection() {
       <div className="flex flex-col items-center gap-4 mb-[100px]">
         <Feature
           image={Images.features.flexiblity}
-          button="Learn more"
+          more
           description={`We can scale our resource model up and down to match your demands, whether you're operating a simple marketing campaign in a single area or a big scale worldwide program spanning numerous regions and nations.`}
           title="Flexibility"
         />

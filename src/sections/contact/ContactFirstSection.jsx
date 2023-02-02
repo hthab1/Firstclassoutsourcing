@@ -38,7 +38,7 @@ function ContactFirstSection() {
           <img
             src={Images.contact.hero}
             alt="contact"
-            className="rounded-3xl object-cover w-[500px] h-[300px]"
+            className="rounded-3xl object-cover w-[500px] h-2/3"
           />
         </div>
       </div>
